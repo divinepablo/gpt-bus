@@ -1,21 +1,23 @@
-# gpt-bus
-hetero-bus on top
+# GPTBus
+## An event bus made by ChatGPT
 
-insane table
+The event bus was tested along side other buses.
 
-columns is iterations x 1m
-rows is ms
+* Each test was for 1 million iterations.
+* Unit of measurement is in ms.
+
+### Table of All results:
 
 ![table](https://i.imgur.com/xzXLkj0.png)
 
-Without Google Guava (shit is so slow)
+### Graph Without Google Guava or LWJEB
 
 ![with guava](./graph2.svg)
 
-Without Google Guava (shit is so slow)
+Interactive Chart: https://docs.google.com/spreadsheets/d/e/2PACX-1vQ5T4mEpH3JhBrPXZ1Xol8iN6Hp9Bu8u8LCsZ_79zjrnqiv2DjnCS0gwPksDnakV-iHg2n7uYfuzSaX/pubchart?oid=1180064623&format=interactive
+
+### Graph With Google Guava and LWJEB
 
 ![without guava](./graph.svg)
 
-interactive: https://docs.google.com/spreadsheets/d/e/2PACX-1vQ5T4mEpH3JhBrPXZ1Xol8iN6Hp9Bu8u8LCsZ_79zjrnqiv2DjnCS0gwPksDnakV-iHg2n7uYfuzSaX/pubchart?oid=1180064623&format=interactive
-
-interactive2: https://docs.google.com/spreadsheets/d/e/2PACX-1vQ5T4mEpH3JhBrPXZ1Xol8iN6Hp9Bu8u8LCsZ_79zjrnqiv2DjnCS0gwPksDnakV-iHg2n7uYfuzSaX/pubchart?oid=369240076&format=interactive
+Interactive Chart: https://docs.google.com/spreadsheets/d/e/2PACX-1vQ5T4mEpH3JhBrPXZ1Xol8iN6Hp9Bu8u8LCsZ_79zjrnqiv2DjnCS0gwPksDnakV-iHg2n7uYfuzSaX/pubchart?oid=369240076&format=interactive

@@ -3,11 +3,14 @@ hetero-bus on top
 
 insane table
 
+columns is iterations x 1m
+rows is ms
+
 ![table](https://i.imgur.com/xzXLkj0.png)
 
 Without Google Guava (shit is so slow)
 
-![without guava](./graph.svg)
+![with guava](./graph2.svg)
 
 Without Google Guava (shit is so slow)
 

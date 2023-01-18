@@ -1,4 +1,4 @@
-package gay.hetero.test;
+package test;
 
 import best.azura.eventbus.core.Event;
 import best.azura.eventbus.handler.EventHandler;
@@ -11,7 +11,6 @@ import io.github.nevalackin.radbus.PubSub;
 import rip.hippo.lwjeb.configuration.BusConfigurations;
 import rip.hippo.lwjeb.configuration.config.impl.BusPubSubConfiguration;
 import rip.hippo.lwjeb.message.publish.impl.ExperimentalMessagePublisher;
-import test.TestEvent;
 
 public class Main {
     private static final Object MONKEY = new Object();

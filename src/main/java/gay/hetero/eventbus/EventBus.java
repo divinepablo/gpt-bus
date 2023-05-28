@@ -35,6 +35,20 @@ public class EventBus {
         if (map != null) {
             for (Object subscriber : map.keySet()) {
                 Method method = map.get(subscriber);
+                try {
+                    method.invoke(subscriber, event);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+    
+    public void postAsync(Object event) {
+        ConcurrentHashMap<Object, Method> map = handlers.get(event.getClass());
+        if (map != null) {
+            for (Object subscriber : map.keySet()) {
+                Method method = map.get(subscriber);
                 executor.execute(() -> {
                     try {
                         method.invoke(subscriber, event);
